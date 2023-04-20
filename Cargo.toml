@@ -1,0 +1,20 @@
+[workspace]
+members = [
+    "methods",
+    "host",
+]
+
+# Always optimize; building and running the guest takes much longer without optimization.
+[profile.dev]
+opt-level = 3
+
+[profile.dev.build-override]
+opt-level = 3
+
+[profile.release]
+debug = 0
+lto = true
+opt-level = 3
+
+[profile.release.build-override]
+opt-level = 3

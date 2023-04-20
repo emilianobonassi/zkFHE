@@ -1,0 +1,11 @@
+[package]
+name = "starter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+methods = { path = "../methods" }
+risc0-zkvm = { git = "ssh://git@github.com/emilianobonassi/risc0.git", ver = "d53b8e0a3f5a68a96e56b57805e4174a6bd03435" }
+serde = "1.0"
+Cupcake = { git = "ssh://git@github.com/emilianobonassi/Cupcake.git", ver = "0cfb82de7c0d8241afe65f9ca88cf51f1630e17f"}
+bincode = "1.3"
